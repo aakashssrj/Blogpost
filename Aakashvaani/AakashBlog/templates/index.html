@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .main{
+            padding=25px;
+            font-size=1000px;
+            color:purple;
+            background-color:red;
+
+        }
+    </style>
+    <title>{{title}}</title>
+</head>
+<body>
+    <div class="main">
+    <h1>AAKASHVAANI</h1>
+    </div>
+
+    {%for i in clist%}
+    <div>
+        {{forloop.counter0}}{{i}}
+    </div>
+    {% endfor %}
+    <br>
+
+    <table border="2" cellpadding='20'>
+        <tr>
+        <td>NAME</td>
+        <td>BRANCH</td>
+        
+        </tr>
+
+        {%for i in dict2%}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.Branch}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+
+
+</body>
+</html>
